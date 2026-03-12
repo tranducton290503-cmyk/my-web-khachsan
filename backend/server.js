@@ -27,6 +27,8 @@ connectDB();
 
 // 3. Middleware hệ thống
 app.use(cors());
+app.use(cors({
+  oringin: 'https://my-web-khachsan-1.onrender.com'}));
 app.use(express.json()); // Parse JSON body
 app.use(express.urlencoded({ extended: true })); // Parse URL-encoded bodies
 
